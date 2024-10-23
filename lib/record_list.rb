@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "rails"
+require "active_record"
 require "active_record_extended"
 
 require_relative "record_list/version"
