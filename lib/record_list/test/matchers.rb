@@ -61,11 +61,9 @@ module RecordList
         end
       end
 
-      # rubocop:disable Naming/PredicateName
       def have_record_list(expected)
         HaveRecordList.new(expected)
       end
-      # rubocop:enable Naming/PredicateName
 
       class HaveAndBelongsToRecordLists
         def initialize(expected)
@@ -138,11 +136,9 @@ module RecordList
         end
       end
 
-      # rubocop:disable Naming/PredicateName
       def have_and_belongs_to_record_lists(expected)
         HaveAndBelongsToRecordLists.new(expected)
       end
-      # rubocop:enable Naming/PredicateName
     end
   end
 end

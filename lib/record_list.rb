@@ -38,11 +38,9 @@ module RecordList
       record_lists_reflections_cache[name] ||= reflection
     end
 
-    # rubocop:disable Naming/PredicateName
     def has_and_belongs_to_record_lists(name, **)
       reflection = RecordList::Builder::BelongsToList.build(self, name, **)
       record_lists_reflections_cache[name] ||= reflection
     end
-    # rubocop:enable Naming/PredicateName
   end
 end
